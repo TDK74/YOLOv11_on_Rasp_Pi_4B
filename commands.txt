@@ -1,0 +1,47 @@
+Create an working folder in the home directory:
+mkdir YOLO
+
+Change to the working directory:
+cd YOLO
+
+Create a virtual environment:
+python3 -m venv yoloenv
+
+Activate the virtual environment:
+source yoloenv/bin/activate
+
+Upgrade pip in the virtual environment:
+pip install --upgrade pip
+
+Install autoremove if not present in the virtual environment:
+pip install pip-autoremove
+
+Upgrade/install ultralytics in the virtual environment:
+pip install --upgrade ultralytics
+
+List the installed packages and save them in a file,
+if everything works properly:
+(the file could be use afterwards as requirements.txt)
+pip freeze > packages_date_1.txt (or pip_freeze_date_1.txt)
+
+
+Additional options for optimization I wanted to try in order to run
+YoloV11 faster on my Raspberry Pi 4 B, but none were successful: 
+
+# Export a YOLO11n PyTorch model to ONNX format
+yolo export model=yolo11n.pt format=onnx  # export official model
+
+# Export a YOLO11n PyTorch model to ONNX format
+yolo export model=yolo11n.pt format=onnx dynamic=True
+
+# Export a YOLO11n PyTorch model to TensorFL format
+yolo export model=yolo11n.pt format=tflite int8=True   # export TensorFL model with INT8 quantization
+
+# Export a YOLO11n PyTorch model to TensorFL format
+yolo export model=yolo11n.pt format=tflite  # creates 'yolo11n.tflite'
+
+# Run inference with the exported model
+yolo predict model=yolo11n.tflite source='https://ultralytics.com/images/bus.jpg'
+
+# Benchmark YOLO11n speed and accuracy on the COCO8 dataset for all export formats
+yolo benchmark model=yolo11n.pt data=coco8.yaml imgsz=640
