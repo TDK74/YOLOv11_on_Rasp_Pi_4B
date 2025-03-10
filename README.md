@@ -23,7 +23,7 @@ Run YOLOv11 for Real-Time Recognition on a Raspberry Pi model 4 B.
 See **_commands.txt_** and **_pip_freeze.txt_** for more details if interested.
 
 ## Failed attempts to make additional optimizations in order to run YOLOv11 faster on my Raspberry Pi 4
-Several examples where I failed with an error message "Illegal instruction" although I managed to resolve the complicated dependencies between installed packages:
+Several examples where I failed with an error message "Illegal instruction" although I managed to resolve the complicated dependencies between the installed packages:
 
 #### Export a YOLO11n PyTorch model to ONNX format:
 yolo export model=yolo11n.pt format=onnx  # export official model
