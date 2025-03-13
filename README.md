@@ -1,7 +1,7 @@
 # YOLOv11_on_Rasp_Pi_4B
 Run YOLOv11 for Real-Time Recognition on a Raspberry Pi model 4 B.
 
-* Very useful sites to make YOLOv11 run:
+* Very useful sites helped me get YOLOv11 up and running:
 
 <https://qengineering.eu/install-pytorch-on-raspberry-pi-4.html>
 
