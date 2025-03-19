@@ -1,5 +1,5 @@
 # YOLOv11_on_Rasp_Pi_4B
-Run YOLOv11 for Real-Time Recognition on a Raspberry Pi model 4 B.
+Run YOLOv11 for Real-Time Recognition on Raspberry Pi model 4B.
 
 * Very useful sites helped me get YOLOv11 up and running:
 
