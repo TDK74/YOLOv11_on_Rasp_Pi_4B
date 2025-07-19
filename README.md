@@ -38,6 +38,11 @@ yolo export model=yolo11n.pt format=tflite int8=True   # export TensorFL model w
 
 The branches will be left unmerged to the master so that the files from Objects Detection, Segmentation and Pose Detection could be easily distinguished.
 
-Only YOLOv8 on laptop and YOLOv11 on Raspberry Pi 4B (2 GB RAM) for the moment.
+Only YOLOv8, YOLOv11 on laptop and YOLOv11 on Raspberry Pi 4B (2 GB RAM) for the moment.
 
-Next will be on Nvidia Jetson Nano (4 GB RAM).
+Next will be on Nvidia Jetson Nano (4 GB RAM).  
+  
+
+## Video demo
+Link to my illustrative Youtube video:  
+https://youtu.be/xkU0IrFK-J8
